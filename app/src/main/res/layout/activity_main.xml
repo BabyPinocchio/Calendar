@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liuxiangjun.exercise1.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.liuxiangjun.exercise1.MainActivity">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|left"
+            android:layout_weight="1"
+            android:background="#888"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|right"
+            android:layout_weight="1"
+            android:background="#999"
+            android:gravity="center"
+            android:text="查看日程"
+            android:textColor="#333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.liuxiangjun.exercise1.MainActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周日"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周一"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周二"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周三"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周四"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周五"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="周六"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:layout_height="30dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.4"
+            android:id="@+id/image_view"
+            android:src="@drawable/img_1" />
+            <!--alpha为透明度-->
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/viewPager">
+
+        </android.support.v4.view.ViewPager>
+
+    </FrameLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp" />-->
+
+    <!-- layout_gravity 是表示当前元素在其父元素内部的偏好的对其方向 -->
+
+    <!-- gravity 内部的对齐方式，即当当前元素足够大的时候【当前元素内部的物件】在【当前元素】内部的位置 -->
+
+</LinearLayout>
